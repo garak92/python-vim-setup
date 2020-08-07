@@ -1,2 +1,2 @@
 # python-vim-setup
-Simple Vim setup for Python
+Plain simple minimalistic Vim setup for Python
