@@ -7,3 +7,4 @@ Features:
 - Auto-indentation
 - Syntax highlight
 - NERDTree for folder navigation
+- Line numbers
