@@ -9,11 +9,14 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'preservim/nerdtree'
+Plugin 'Vimjas/vim-python-pep8-indent'
 
 call vundle#end()
 
 " Activate NERDTree and auto-indentation when opening vim
 autocmd vimenter * NERDTree
+
+" Activate autoindent
 filetype plugin indent on
 
 " Easier navigation on splitted window (left control + h/j/k/l)
