@@ -1,5 +1,5 @@
 # python-vim-setup
-Plain simple minimalistic Vim setup for Python
+Plain simple minimalistic Vim setup for Python and Rust development
 
 Features:
 
