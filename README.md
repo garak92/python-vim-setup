@@ -8,3 +8,6 @@ Features:
 - Syntax highlight
 - NERDTree for folder navigation
 - Line numbers
+- Coc-Rust-Analyzer
+
+Note: assumes Plug and Coc-Rust-Analyzer are previously installed.
