@@ -9,10 +9,9 @@ call plug#begin('~/.vim/plugged')
 
 " Add plugins here
 Plug 'VundleVim/Vundle.vim'
-Plug 'davidhalter/jedi-vim'
 Plug 'preservim/nerdtree'
-Plug 'rust-lang/rust.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ycm-core/YouCompleteMe'
+Plug 'tyrannicaltoucan/vim-deep-space'
 call plug#end()
 
 " Activate NERDTree and auto-indentation when opening vim
@@ -39,3 +38,9 @@ hi CocInfoFloat guifg=#000000 guibg=#ffffff
 hi CocErrorFloat guifg=#000000 guibg=#ffffff
 hi CocWarningFloat guifg=#000000 guibg=#ffffff
 hi CocHintFloat guifg=#000000 guibg=#ffffff
+
+set background=dark
+set termguicolors
+colorscheme deep-space
+
+let g:ycm_autoclose_preview_window_after_insertion = 1
