@@ -12,6 +12,7 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'preservim/nerdtree'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " Activate NERDTree and auto-indentation when opening vim
@@ -42,5 +43,7 @@ hi CocHintFloat guifg=#000000 guibg=#ffffff
 set background=dark
 set termguicolors
 colorscheme deep-space
-
+:set number
 let g:ycm_autoclose_preview_window_after_insertion = 1
+"Rust formatter
+let g:rustfmt_autosave = 1
