@@ -34,12 +34,6 @@ let g:rustfmt_autosave = 1
 "Parentheses highlight color
 hi MatchParen cterm=none ctermbg=brown ctermfg=green
 
-"Coc autocomplete color
-hi CocInfoFloat guifg=#000000 guibg=#ffffff
-hi CocErrorFloat guifg=#000000 guibg=#ffffff
-hi CocWarningFloat guifg=#000000 guibg=#ffffff
-hi CocHintFloat guifg=#000000 guibg=#ffffff
-
 set background=dark
 set termguicolors
 colorscheme deep-space
@@ -47,3 +41,15 @@ colorscheme deep-space
 let g:ycm_autoclose_preview_window_after_insertion = 1
 "Rust formatter
 let g:rustfmt_autosave = 1
+
+"Auto bracket
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O<TAB>
+inoremap {;<CR> {<CR>};<ESC>O<TAB>
+
+set autoindent
+set smartindent
