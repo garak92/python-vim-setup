@@ -4,14 +4,15 @@ filetype on
 :set nospell
 
 set rtp+=~/.vim/autoload/plug.vim
-
+set encoding=utf-8
 call plug#begin('~/.vim/plugged')
 
 " Add plugins here
 Plug 'VundleVim/Vundle.vim'
 Plug 'preservim/nerdtree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ycm-core/YouCompleteMe'
-Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'cocopon/iceberg.vim'
 Plug 'rust-lang/rust.vim'
 call plug#end()
 
@@ -35,8 +36,7 @@ let g:rustfmt_autosave = 1
 hi MatchParen cterm=none ctermbg=brown ctermfg=green
 
 set background=dark
-set termguicolors
-colorscheme deep-space
+colorscheme iceberg
 :set number
 let g:ycm_autoclose_preview_window_after_insertion = 1
 "Rust formatter
