@@ -50,3 +50,7 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+"Navigate tabs
+nnoremap <C-j> :tabprevious<CR>
+nnoremap <C-k> :tabnext<CR>
